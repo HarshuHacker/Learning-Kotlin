@@ -2,6 +2,8 @@ fun main() {
     val number = 2
     var index = 1
     while (index <= 10) {
+        // println(number.toString() + "*" + index + "=" + (number * index))
+        // String Templating
         println("$number * $index = ${number * index}")
         index++
     }
