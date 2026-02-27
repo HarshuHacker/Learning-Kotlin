@@ -2,6 +2,8 @@ fun main() {
     println("iPhone16 is being created")
     val iPhone16 = Apple("iPhone 16")
     iPhone16.display()
+    println(iPhone16.toString()) // Calling the Overridden toString method
+
     println()
     println("ABC is being created")
     val keypadPhone = Mobile("ABC")
@@ -28,6 +30,10 @@ class Apple(nameParam: String): Mobile(nameParam) {
         super.display() // Calls the parent display method
         println("I have an OLED display")
     }
+
+    override fun toString(): String {
+        return "$name Pro Max"
+    }
 }
 
 // Output
@@ -37,6 +43,7 @@ class Apple(nameParam: String): Mobile(nameParam) {
 // Apple init is called
 // LCD Display
 // I have an OLED display
+// iPhone 16 Pro Max
 //
 // ABC is being created
 // Mobile init is called
