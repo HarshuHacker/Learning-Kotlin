@@ -12,5 +12,5 @@ fun addition(a: Double, b: Double) {
 }
 
 // Output
-//Addition 1 called with a=1, b=2
-//Addition 2 called with a=1.0, b=2.0
+// Addition 1 called with a=1, b=2
+// Addition 2 called with a=1.0, b=2.0
