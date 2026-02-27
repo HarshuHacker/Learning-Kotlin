@@ -14,6 +14,7 @@ open class Mobile(nameParam: String) {
     init {
         println("Mobile init is called")
     }
+
     val name: String = nameParam
     open val size: Double = 5.5
     fun makeCall() = println("Make call")
@@ -21,10 +22,11 @@ open class Mobile(nameParam: String) {
     open fun display() = println("LCD Display")
 }
 
-class Apple(nameParam: String): Mobile(nameParam) {
+class Apple(nameParam: String) : Mobile(nameParam) {
     init {
         println("Apple init is called")
     }
+
     override val size: Double = 6.1
     override fun display() {
         super.display() // Calls the parent display method
@@ -32,6 +34,7 @@ class Apple(nameParam: String): Mobile(nameParam) {
     }
 
     override fun toString(): String {
+        // We can override the toString method because it is open. refer https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/
         return "$name Pro Max"
     }
 }
