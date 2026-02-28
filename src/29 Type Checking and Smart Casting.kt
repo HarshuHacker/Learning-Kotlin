@@ -4,7 +4,7 @@ fun main() {
 
     val arr = arrayOf(circle, player)
     for (obj in arr) {
-        if (obj is Circle3) {
+        if (obj is Circle3) { // This is called Type Checking
             obj.area() // This is smart casting. Since we have added a check above, all the properties of the Circle class is available here.
         } else {
             (obj as Player3).drag() // This is called Explicit type casting
