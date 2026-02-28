@@ -1,17 +1,20 @@
 fun main() {
-    val marksAbove70 = false
-    val knowsProgramming = true
+    val age18Plus = false
+    val knowsDriving = true
 
     println("Called For Interview:")
 
     // AND Operator
-    var calledForInterview = marksAbove70 && knowsProgramming
-    println("Other Companies: $calledForInterview") // false
+    val canApplyForDL = age18Plus && knowsDriving
+    println("Can Apply For DL: $canApplyForDL") // false
+
+    val hasBike = false
+    val hasCar = true
 
     // OR Operator
-    calledForInterview = marksAbove70 || knowsProgramming
-    println("RSL: $calledForInterview") // true
+    val hasVehicle = hasBike || hasCar
+    println("Has Vehicle: $hasVehicle") // true
 
     // NOT Operator
-    println("Marks Less Than 70: ${!marksAbove70}") // true
+    println("Age Less than 18: ${!age18Plus}") // true
 }
